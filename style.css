@@ -5,6 +5,7 @@ html {
 	-ms-text-size-adjust:100%;
 }
 body {
+    color:#fff;
 	margin:0;
 	font-size:13px;
 	line-height:1.231;
@@ -12,8 +13,13 @@ body {
 }
 body,button,input,select,textarea {
 	font-family: 'Ubuntu';
-	color:#222;
 }
+a .help
+{
+    border:1px solid #fff;
+    float:right;
+}
+
 /*a {
 	color:#00e;
 }
@@ -34,8 +40,7 @@ b,strong {
 	font-weight:bold;
 }
 pre,code {
-	font-family:monospace,monospace;
-	_font-family:'Ubuntu Mono',monospace;
+	font-family:'Ubuntu Mono',monospace;
 	font-size:1em;
 }
 pre {
@@ -46,6 +51,10 @@ pre {
 ul,ol {
 	margin:1em 0;
 	padding:0 0 0 40px;
+	width:auto;
+	max-width: 660px;
+	margin-left: auto;
+    margin-right: auto;
 }
 dd {
 	margin:0 0 0 40px;
@@ -53,7 +62,6 @@ dd {
 nav ul,nav ol {
 	list-style:none;
 	list-style-image:none;
-	margin:0;
 	padding:0;
 }
 img {
@@ -84,45 +92,20 @@ header a {
 	margin:0;
 	text-align:center;
 	-webkit-animation:fadeIn 1s;
+	-moz-animation:fadeIn 1s;
 	background:#000 no-repeat center bottom;
-	border-top: 1px solid transparent
+	border-top: 1px solid transparent;
+	background:#000 url('images/yellow-flower.jpg') no-repeat center top;
 }
-.hellobox {
-	background:#000 url('yellow-flower.jpg') no-repeat center top;
+.roboticsbox {
+    background:#000 url('images/LTM_7953.jpg') no-repeat center top;
 }
+
 .wrap {
 	width: 660px;
 	margin: 0 auto;
 }
 
-@-webkit-keyframes shakey {
-	0% {
-		-webkit-transform:rotate3d(0,0,0,0deg)
-	}
-	25% {
-		-webkit-transform:rotate3d(0,0,0,2deg)
-	}
-	75% {
-		-webkit-transform:rotate3d(0,0,0,-2deg)
-	}
-	100% {
-		-webkit-transform:rotate3d(0,0,0,0deg)
-	}
-}
-@-moz-keyframes shakey {
-	0% {
-		-moz-transform:rotate(0deg)
-	}
-	25% {
-		-moz-transform:rotate(2deg)
-	}
-	75% {
-		-moz-transform:rotate(-2deg)
-	}
-	100% {
-		-moz-transform:rotate(0deg)
-	}
-}
 h1 {
 	font-weight:900;
 	font-size:8em;
@@ -133,8 +116,6 @@ h1 {
 	padding:60px 0 0 0;
 	text-shadow:0 0 30px rgba(58,93,125,0.67);
 	line-height:1em;
-	-webkit-animation:shakey .2s ease-in-out alternate;
-	-moz-animation:shakey .2s ease-in-out alternate;
 	-webkit-animation-delay:1s;
 	-webkit-transform:translate3d(0,0,0) transition:all .2s linear;
 	-o-transition:all .2s linear;
@@ -171,18 +152,24 @@ h4 {
 	-moz-transition:all .2s linear;
 	-webkit-transition:all .2s linear;
 }
+h3 {
+    margin-left:auto;
+    margin-right:auto;
+    width:660px
+}
 nav {
 	background:rgba(0,0,0,0.4);
 	text-align:center;
 }
 p {
-	color:rgba(255,255,255,0.9);
-	/*color:white;*/
 	font-size:1.1em;
-	width:660px;
+	width:auto;
+	max-width: 660px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	padding:0 10pt;
 }
+
 nav ul li {
 	display:inline-block;
 	margin:22px 10px 23px;
@@ -213,6 +200,10 @@ nav ul li a.active {
 footer {
 	color:#fff;
 	text-align:center;
+}
+.center
+{
+    text-align:center;
 }
 pre {
 	margin:20px auto 40px;
@@ -246,6 +237,11 @@ pre {
 .wrap {
   width: 600px;
   margin: 0 auto;
+}
+
+#flex {
+	width:100%;
+	max-width:660px;
 }
 
 dl {
@@ -372,18 +368,15 @@ body#not-found-page {
 		transform: translateY(10px)  translateX(0);
 	}
 }
-
-/* ==|== media queries ====================================================== PLACEHOLDER Media Queries for Responsive Design. These override the primary ('mobile first') styles Modify as content requires. ========================================================================== */
-@media only screen and (min-width:480px) {
-	/* Style adjustments for viewports 480px and over go here */
-}
-@media only screen and (max-width:600px) {
-	/* Style adjustments for viewports 480px and over go here */
-	.kdlogo {
-		background-size:auto 25px;
-		width:99px;
-		height:25px;
+@media only screen and (max-width:1200px) {
+	h1 {
+		font-size:6em;
+		letter-spacing:-2px;
+		margin:0 0 10px 0;
+		padding:80px 0 0 0;
 	}
+}
+@media only screen and (max-width:900px) {
 	h1 {
 		font-size:4em;
 		letter-spacing:-2px;
@@ -396,16 +389,6 @@ body#not-found-page {
 	h4 {
 		font-size:1.4em;
 	}
-	.hellobox {
-		height:320px;
-		background-size:auto 330px;
-	}
-	.wrap {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 0 1em;
-	}
-
 	dl dt {
 		font-size: 1.2em;
 	}
@@ -424,7 +407,13 @@ body#not-found-page {
 		font-size:1.1em;
 		padding:20px 30px;
 	}
-	@media only screen and (min-width: 768px) {
-		/* Style adjustments for viewports 768px and over go here */
+	.hellobox {
+		height:230px;
+		background-size:auto 230px;
 	}
-
+	.wrap {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 1em;
+	}
+}

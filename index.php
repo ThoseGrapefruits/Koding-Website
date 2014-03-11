@@ -23,12 +23,8 @@
 		<li><a href="about-me.php">About Me</a></li>
 	</ul>
 	</nav>
-	<h2>I have nothing to put here right now, so here's an extremely dynamic llama:</h2>
-	<div style="width:660px; margin-left:auto; margin-right:auto;"><marquee behavior="alternate"> <<marquee behavior="alternate" direction="up" height="320">
-	    <a href="https://upload.wikimedia.org/wikipedia/commons/b/b9/Llama_lying_down.jpg">
-	        <img style="margin-left:auto; margin-right:auto; display: block;" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Llama_lying_down.jpg" width=500px>
-        </a>
-    </marquee></marquee> </div>
+	<h2>I have nothing to put here right now.</h2>
+	<h2>If you want to know more about me, check out the <b>About Me</b> link above.</h2>
 	<footer>
 	<h6>Made by <a href="http://loganmoore.me">Logan Moore</a>.</h2>
 	</footer>
