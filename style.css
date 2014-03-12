@@ -5,21 +5,35 @@ html {
 	-ms-text-size-adjust:100%;
 }
 body {
-    color:#fff;
+	color:#fff;
 	margin:0;
-	font-size:13px;
+	font-size:0.9em;
 	line-height:1.231;
 	background:#393630;
 }
 body,button,input,select,textarea {
 	font-family: 'Ubuntu';
 }
+div mainbody {
+	margin-left:auto;
+	margin-right:auto;
+	max-width:660px;
+}
 a .help
 {
-    border:1px solid #fff;
-    float:right;
+	border:1px solid #fff;
+	float:right;
 }
-
+form {
+	margin-left:auto;
+	margin-right:auto;
+	max-width:660px;
+}
+a {
+	margin-left:auto;
+	margin-right:auto;
+	max-width:660px;
+}
 /*a {
 	color:#00e;
 }
@@ -41,7 +55,7 @@ b,strong {
 }
 pre,code {
 	font-family:'Ubuntu Mono',monospace;
-	font-size:1em;
+	font-size:0.9em;
 }
 pre {
 	white-space:pre;
@@ -54,7 +68,7 @@ ul,ol {
 	width:auto;
 	max-width: 660px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 }
 dd {
 	margin:0 0 0 40px;
@@ -129,13 +143,13 @@ h1:hover,h1:focus {
 }
 h2 {
 	font-weight:100;
-	font-size:2em;
+	font-size:3em;
 	color:#fff;
 	text-align:center;
 	border-radius:4px;
 	padding:0;
 	margin:0;
-	margin: 2em 0;
+	margin: 0;
 	line-height: 3em;
 	text-shadow:0 0 5px rgba(58,93,125,1);
 	transition:all .2s linear;
@@ -146,16 +160,21 @@ h2 {
 h4 {
 	font-size:1.7em;
 	font-weight:200;
-	margin:40px 20px 10px 20px;
+	margin:20px 20px 10px 20px;
 	transition:all .2s linear;
 	-o-transition:all .2s linear;
 	-moz-transition:all .2s linear;
 	-webkit-transition:all .2s linear;
 }
+h3, h4, h5 {
+	margin: 10px auto 0 auto;
+	max-width:660px
+}
 h3 {
-    margin-left:auto;
-    margin-right:auto;
-    width:660px
+	font-size:1.8em;
+}
+h5 {
+	font-size:1.2em;
 }
 nav {
 	background:rgba(0,0,0,0.4);
@@ -174,16 +193,15 @@ nav ul li {
 	display:inline-block;
 	margin:22px 10px 23px;
 	color:#fff;
-	font-size:1.4em;
 	font-weight:200;
 	color:#999;
 	text-transform:uppercase;
-	font-size:.9em;
+	font-size:1.2em;
 }
 nav ul li a {
 	color:#fff;
 	text-decoration:none;
-	font-size:1.4em;
+	font-size:1.2em;
 	padding:6px 12px;
 	border-radius:4px;
 	transition:all .2s linear;
@@ -384,10 +402,16 @@ body#not-found-page {
 		padding:80px 0 0 0;
 	}
 	h2 {
-		font-size:1.5em;
+		font-size:2em;
+	}
+	h3 {
+		font-size:1.4em;
 	}
 	h4 {
-		font-size:1.4em;
+		font-size:1.2em;
+	}
+	h5 {
+		font-size:1.1em;
 	}
 	dl dt {
 		font-size: 1.2em;
