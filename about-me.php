@@ -24,7 +24,7 @@
 	</ul>
 	</nav>
 	<br>
-	<p>I saw a play very recently called <b>The Who & The What</b>. Besides being a fantastic play, and among the many things I learned from it, the most valuable lesson for me was the separation of the "who" and the "what" in the judgement of a person.
+	<p>I saw a play very recently called <b>The Who & The What</b>. Besides being a fantastic play, it carried some very important messages. Among the many things I learned from it, the most valuable lesson for me — and the main message of the play — was the separation of the "who" and the "what" in the judgement of a person.
 	<br><br>
 	The "what" are the tangible items, which are listed in the <code>Logan</code> Java class below. They can be described, quantified, and encapsulated on their own away from the person.
 	<br><br>
@@ -37,6 +37,8 @@ class Logan extends Human
 {
     final String name = "Logan Moore";
     
+    String onlineAlias = "ThoseGrapefruits";
+    
     String location = "San Diego, CA";
     
     HashMap < String, String > otherAccounts
@@ -46,7 +48,7 @@ class Logan extends Human
     
     URL website = new URL("<a href="http://loganmoore.me">http://loganmoore.me</a>")
     
-    ArrayList < String > experience = new ArrayList < String >()
+    ArrayList < String > computerExperience = new ArrayList < String >()
     {{
         add("Python");
         add("Java");

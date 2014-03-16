@@ -24,7 +24,8 @@
 	</ul>
 	</nav>
 	<h2>I have nothing to put here right now.</h2>
-	<h2>If you want to know more about me, check out the <b>About Me</b> link above.</h2>
+	<h2>Have a llama.</h2>
+	<div align="center"><img src='images/Llama_lying_down.jpg'></img></div>
 	<footer>
 	<h6>Made by <a href="http://loganmoore.me">Logan Moore</a>.</h2>
 	</footer>

@@ -55,7 +55,7 @@ b,strong {
 }
 pre,code {
 	font-family:'Ubuntu Mono',monospace;
-	font-size:0.9em;
+	font-size:1.1em;
 }
 pre {
 	white-space:pre;
@@ -187,6 +187,10 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	padding:0 10pt;
+	font-weight:300;
+}
+b {
+	font-weight:500;
 }
 
 nav ul li {
@@ -231,7 +235,7 @@ pre {
 	color:#fff;
 	border-radius:8px;
 	text-align:left;
-	font-size:1.3em;
+	font-size:1.1em;
 	padding:20px 30px;
 	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.39),0 1px 0 rgba(255,255,255,0.16);
 	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.39),0 1px 0 rgba(255,255,255,0.16);
@@ -240,6 +244,19 @@ pre {
 	-o-transition:all .2s linear;
 	-moz-transition:all .2s linear;
 	-webkit-transition:all .2s linear;
+}
+code {
+	margin:20px auto 40px;
+	width:70%;
+	background:rgba(0,0,0,0.4);
+	color:#fff;
+	border-radius:3px;
+	text-align:center;
+	font-size:1.1em;
+	padding:2px 4px;
+	-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.39),0 1px 0 rgba(255,255,255,0.16);
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.39),0 1px 0 rgba(255,255,255,0.16);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.39),0 1px 0 rgba(255,255,255,0.16);
 }
 .clearfix:before,.clearfix:after {
 	content:"";
@@ -428,7 +445,7 @@ body#not-found-page {
 	pre {
 		margin:20px auto 40px;
 		width:70%;
-		font-size:1.1em;
+		font-size:1em;
 		padding:20px 30px;
 	}
 	.hellobox {
