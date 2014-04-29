@@ -146,7 +146,8 @@ h1 {
 	text-align:center;
 	margin:0 0 10px 0;
 	padding:60px 0 0 0;
-	text-shadow:0 0 30px rgba(58,93,125,0.67);
+	/*text-shadow:0 0 30px rgba(58,93,125,0.67);*/
+	text-shadow: 0 1px 3px rgba(0,0,0,.8),0 0 30px rgba(0,0,0,.075);
 	line-height:1em;
 	-webkit-animation-delay:1s;
 	-webkit-transform:translate3d(0,0,0) transition:all .2s linear;
